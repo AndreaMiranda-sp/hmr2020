@@ -1,0 +1,27 @@
+Tarefa final
+
+1.	Nome
+Luciana Rinco Caparroz Correia – RA 1906006
+ 
+2.	O que é GPU e para que é usada?
+GPU é a Graphics Processing Unit, ou a Unidade de Processamento Gráfico. Conhecida como placa de vídeo também é uma unidade de processamento como a CPU, mas com uma diferença: ela é voltada especificamente para atividades gráficas como jogos, softwares de edição de vídeo, modelagem tridimensional ou exibição de vídeos.
+
+3.	Como o Spark utiliza a GPU? E mostre sua arquitetura.
+O Spark reconhece a GPU como um recurso de primeira classe, juntamente com a CPU e a memória do sistema. Isso permite que o Spark coloque cargas de trabalho aceleradas por GPU diretamente em servidores que contêm os recursos GPU requisitados, conforme são necessários para concluir um trabalho. A arquitetura de uma aplicação Spark é constituída por três partes principais:
+•	O Driver Program, que é a aplicação principal que gerencia a criação e é quem executará o processamento definido pelo programados;
+•	O Cluster Manager é um componente opcional que só é necessário se o Spark for executado de forma distribuída. Ele é responsável por administrar as máquinas que serão utilizadas como workers;
+•	Os Workers, que são as máquinas que realmente executarão as tarefas que são enviadas pelo Driver Program. Se o Spark for executado de forma local, a máquina desempenhará tanto o papel de Driver Program como de Worker.
+
+4.	O que é Stream e como o Spark utiliza o Stream?
+O Spark Streaming é uma extensão que faz parte do núcleo da API Spark. O Spark Streaming facilita a criação de fluxos de processamento tolerante a falhas sobre dados em streaming e em tempo real. A forma como o Spark Streaming funciona é dividindo o streaming em lotes (chamados micro lotes) em um intervalo predefinido (N segundos) e, em seguida, trata cada lote de dados como arquivos Resilient Distributed Datasets (RDDs) para processar os dados em tempo real.
+
+5.	O que é Machine Learning? Cite como o Spark utiliza sua biblioteca Mlib para acelerar o processamento.
+Machine learning é uma área da ciência da computação relacionada ao desenvolvimento de tecnologias de aprendizado de máquinas. MLlib é a biblioteca de machine learning escalável do Spark que consiste em algoritmos e utilitários de aprendizado comuns, incluindo classificação, regressão, clustering, filtragem colaborativa, redução de dimensionalidade, bem como primitivos de otimização subjacente.
+
+6.	Reproduza um código da Web utilizando SQL com Python (pyspark). Submeta o código no github. Deixe seus comentários sobre o desenvolvimento aqui.
+
+7.	Reproduza um código da Web utilizando Stream com Python (pyspark). Submeta o código no github. Deixe seus comentários sobre o desenvolvimento aqui.
+
+8.	Reproduza um código da Web utilizando Machine Learning com Python (pyspark). Submeta o código no github. Deixe seus comentários sobre o desenvolvimento aqui. Faça um gráfico mostrando a análise do resultado, envie junto no github.
+
+
